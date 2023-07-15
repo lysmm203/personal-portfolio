@@ -1,9 +1,14 @@
+html{
+  font-family: "Roboto", sans-serif;
+}
+
 .navbar{
   height: 15vh;
   float:right;
   display: flex;
   align-items: center;
   background-color: red;
+  font-weight: 400;
 }
 
 .dummy{
