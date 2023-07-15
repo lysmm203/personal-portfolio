@@ -1,9 +1,12 @@
 .navbar{
-
+  height: 15vh;
   float:right;
+  display: flex;
+  align-items: center;
+  background-color: red;
 }
 
 .dummy{
-  height: 10em;
-  background-color: red;
+
+
 }
