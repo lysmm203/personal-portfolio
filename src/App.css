@@ -1,5 +1,12 @@
 html{
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .navbar{
@@ -9,4 +16,10 @@ html{
   align-items: center;
   background-color: red;
   font-weight: 400;
+}
+
+.navbar-buttons li{
+  display: inline-block;
+  padding: 16px 32px;
+
 }
