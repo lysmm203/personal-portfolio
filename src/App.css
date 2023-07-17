@@ -25,3 +25,16 @@ ul{
   padding: 16px 32px;
 
 }
+
+.padding-div{
+  display: flex;
+  background-color: pink;
+  width: 80vw;
+  justify-content: center;
+
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
