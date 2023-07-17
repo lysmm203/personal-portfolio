@@ -7,15 +7,17 @@ ul{
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+
 }
 
 .navbar{
-  height: 15vh;
-  float:right;
+  height: 10vh;
   display: flex;
   align-items: center;
   background-color: red;
   font-weight: 400;
+  justify-content: right;
+
 }
 
 .navbar-buttons li{
