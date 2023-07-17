@@ -1,9 +1,13 @@
 
-export default Body(){
+
+export default function Body({children}){
+
     return (
-        <div>
-
-
+        <div className={"wrapper"}>
+            <div className={"padding-div"}>
+                {children}
+            </div>
         </div>
     )
+
 }
