@@ -45,8 +45,9 @@ ul{
 
 .sidebar{
   display: flex;
-  align-content: end;
-
+  align-items: center;
+  justify-content: center;
   width: 10vw;
+  height: 100vh;
 
 }

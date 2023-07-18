@@ -1,12 +1,12 @@
+import github from '../assets/images/github.png'
+import linkedin from '../assets/images/linkedin.png'
 
 function LeftSidebar(){
     return (
         <div className={"sidebar"}>
             <ul>
-                <li>Left sidebar</li>
-                <li>Left sidebar</li>
-                <li>Left sidebar</li>
-
+                <li><a href={"https://github.com/lysmm203"}><img src={github}/></a></li>
+                <li><a href={"https://www.linkedin.com/in/yong-seok-lee-303185154/"}><img src={linkedin}/></a></li>
             </ul>
         </div>
     )
