@@ -10,6 +10,10 @@ ul{
 
 }
 
+.content{
+  display: flex;
+}
+
 .navbar{
   height: 10vh;
   display: flex;
@@ -37,4 +41,12 @@ ul{
 .wrapper{
   display: flex;
   justify-content: center;
+}
+
+.sidebar{
+  display: flex;
+  align-content: end;
+
+  width: 10vw;
+
 }
