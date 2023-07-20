@@ -15,14 +15,10 @@ function LeftSidebar(){
 
 function RightSidebar(){
     return (
-        <div className={"sidebar right-sidebar"}>
-            <ul>
-                <li>Right sidebar</li>
-                <li>Right sidebar</li>
-                <li>Right sidebar</li>
-
+        <div className={"sidebar"}>
+            <ul className={"sidebar-elements"}>
+                <li className={"flip"}>lyeongsuk97@gmail.com</li>
             </ul>
-            {/*<p>lyeongsuk97@gmail.com</p>*/}
         </div>
     )
 }
