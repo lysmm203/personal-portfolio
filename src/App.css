@@ -1,6 +1,7 @@
 html{
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  background-color: #EEEADE;
 }
 
 ul{
@@ -18,7 +19,6 @@ ul{
   height: 10vh;
   display: flex;
   align-items: center;
-  background-color: #EEEADE;
   font-weight: 400;
   justify-content: right;
   border-bottom-style: solid;
@@ -53,15 +53,34 @@ ul{
   align-items: flex-end;
   width: 10vw;
   height: 90vh;
-
 }
 
 .sidebar-elements{
   position: fixed;
+  transform: translateY(-5rem);
 }
+
+.sidebar-elements li{
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+.sidebar-elements.left-sidebar li:hover{
+  transform: translateY(-5px);
+  border-radius: 8px;
+  background-color: #D7D1C4;
+}
+
 
 .flip{
   transform: rotate(90deg) translateX(-3rem);
+}
+
+
+.flip:hover{
+  transform: translateY(-5px) rotate(90deg) translateX(-3rem);
+  border-radius: 8px;
+  background-color: #D7D1C4;
 }
 
 .button{
