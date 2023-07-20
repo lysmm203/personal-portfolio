@@ -18,16 +18,21 @@ ul{
   height: 10vh;
   display: flex;
   align-items: center;
-  background-color: red;
+  background-color: #EEEADE;
   font-weight: 400;
   justify-content: right;
+  border-bottom-style: solid;
 
 }
 
-.navbar-buttons li{
-  display: inline-block;
-  padding: 16px 32px;
+.navbar ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.navbar-buttons li{
+  padding: 16px 16px;
 }
 
 .padding-div{
@@ -55,7 +60,21 @@ ul{
   position: fixed;
 }
 
-
 .right-sidebar{
   transform: rotate(90deg);
+}
+
+.button{
+  border: solid;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 16px 16px;
+  transition: all 0.5s;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover{
+  background-color: #D7D1C4;
 }

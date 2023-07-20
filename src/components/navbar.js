@@ -4,13 +4,15 @@ export default function Navbar(){
     return (
         <nav className={"navbar"}>
             <ul className={"navbar-buttons"}>
-                <li>About</li>
-                <li>Experience</li>
-                <li>Projects</li>
-                <li>Contact</li>
-                <li>Resume</li>
-
+                <li>01 About</li>
+                <li>02 Experience</li>
+                <li>03 Projects</li>
+                <li>04 Contact</li>
             </ul>
+
+            <div>
+                <a className={"button"} href={"https://www.google.com"}>Resume</a>
+            </div>
         </nav>
     )
 
