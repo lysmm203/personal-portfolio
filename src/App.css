@@ -5,10 +5,9 @@ html{
 }
 
 ul{
-  list-style-type: none;
   margin: 0px;
   padding: 0px;
-
+  list-style-type: none;
 }
 
 .content{
@@ -36,10 +35,10 @@ ul{
 }
 
 .padding-div{
-  display: flex;
-  background-color: pink;
-  width: 80vw;
+  display: block;
+  width: 60vw;
   justify-content: center;
+  padding: 0 10vw;
 }
 
 .wrapper{
@@ -56,6 +55,7 @@ ul{
 }
 
 .sidebar-elements{
+
   position: fixed;
   transform: translateY(-5rem);
 }
@@ -96,4 +96,19 @@ ul{
 
 .button:hover{
   background-color: #D7D1C4;
+}
+
+.section{
+  text-align: left;
+
+}
+
+
+.skill-table{
+  list-style-type: "\025AA";
+  list-style-position: inside;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5px;
 }
