@@ -1,7 +1,9 @@
 export default function AboutMe(){
     return (
         <div>
-            <h2>01 About Me</h2>
+            <div className={"section-heading"}>
+                <h1>01. About Me</h1><hr className={"section-heading-line"}/>
+            </div>
             <p>Hi! My name is Tommy and I enjoy creating things with code. I first started coding in the first
             year of college and I fell in love with it ever since.
             </p>
