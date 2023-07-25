@@ -1,6 +1,6 @@
 export default function AboutMe(){
     return (
-        <div>
+        <div className={"section"}>
             <div className={"section-heading"}>
                 <h1>01. About Me</h1><hr className={"section-heading-line"}/>
             </div>
@@ -24,11 +24,6 @@ export default function AboutMe(){
                 <li className={"skill-item"}>Javascript</li>
                 <li className={"skill-item"}>React</li>
             </ul>
-
-
-
-
-
 
         </div>
     )
