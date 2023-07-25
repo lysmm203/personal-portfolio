@@ -5,8 +5,8 @@ function LeftSidebar(){
     return (
         <div className={"sidebar"}>
             <ul className={"sidebar-elements left-sidebar"}>
-                <li><a href={"https://github.com/lysmm203"}><img src={github}/></a></li>
-                <li><a href={"https://www.linkedin.com/in/yong-seok-lee-303185154/"}><img src={linkedin}/></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href={"https://github.com/lysmm203"}><img src={github}/></a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href={"https://www.linkedin.com/in/yong-seok-lee-303185154/"}><img src={linkedin}/></a></li>
             </ul>
         </div>
     )
