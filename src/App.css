@@ -120,6 +120,7 @@ ul{
 .section-heading{
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .section-heading-line{
@@ -141,4 +142,18 @@ ul{
   font-size: 1.5rem;
 }
 
+
+.experience-table{
+  display: flex;
+}
+
+.company-name{
+  flex: 1 0 auto;
+
+}
+
+.job-description{
+  flex: 2 0 auto;
+
+}
 
