@@ -17,7 +17,7 @@ function RightSidebar(){
     return (
         <div className={"sidebar"}>
             <ul className={"sidebar-elements right-sidebar"}>
-                <li className={"flip"}>lyeongsuk97@gmail.com</li>
+                <li className={"flip"}><a target="_blank" rel="noopener noreferrer" href={"mailto:lyeongsuk97@gmail.com"}>lyeongsuk97@gmail.com</a></li>
             </ul>
         </div>
     )
