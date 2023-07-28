@@ -5,6 +5,10 @@ html{
 
 }
 
+button{
+  display: block;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -16,13 +20,28 @@ p a{
 
 
 p{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin: 1rem 0;
 }
 
 ul{
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+li{
+  font-size: 1.3rem;
+  padding: 0.3rem 0;
+}
+
+h2{
+  margin: 0.75rem 0;
+  font-weight: 400;
+}
+
+.bold{
+  font-weight: 600;
 }
 
 .content{
@@ -70,7 +89,6 @@ ul{
 }
 
 .sidebar-elements{
-
   position: fixed;
   transform: translateY(-5rem);
 }
@@ -89,6 +107,7 @@ ul{
 
 .flip{
   transform: rotate(90deg) translateX(-3rem);
+  font-size: 1rem;
 }
 
 
@@ -139,7 +158,6 @@ ul{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 5px;
-  font-size: 1.5rem;
 }
 
 
@@ -147,13 +165,33 @@ ul{
   display: flex;
 }
 
-.company-name{
+.companies{
   flex: 1 0 auto;
 
 }
 
-.job-description{
-  flex: 2 0 auto;
-
+.company-name{
+  cursor: pointer;
+  border: 0;
+  background-color: #EEEADE;
+  transition: all 0.5s;
+  width: 100%;
+  text-align: left;
 }
 
+.company-name:hover{
+  background-color: #D7D1C4;
+}
+
+.job{
+  padding: 0 5rem;
+}
+
+.job-description{
+  list-style-type: "\025AA";
+  list-style-position: inside;
+}
+
+.job-description li{
+  font-size: 1.1rem;
+}
