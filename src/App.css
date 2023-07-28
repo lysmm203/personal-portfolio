@@ -180,7 +180,7 @@ h2{
 }
 
 .company-name:hover{
-  background-color: #D7D1C4;
+  background-color: #D7D1C4 !important;
 }
 
 .job{

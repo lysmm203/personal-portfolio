@@ -24,13 +24,6 @@ const companies = [
     }
 ]
 
-// 1. Initialize a react state called companiesState, which uses the companies array to create the state
-// 2. Create the array of buttons by mapping through the companiesState state, passing the name, id, clicked, and
-// toggle function
-// 3. The toggle function will use the setCompaniesState. The setCompaniesState will map over the previous state of the
-// buttons. If the event.currentTarget.id == button.id, it will set the clicked to true. Otherwise, it will be false
-// 4. Using the setCompaniesState means that the buttons will be re-rendered with the updated boolean values for clicked
-
 export default function Experiences(){
 
     const [companiesState, setCompaniesState] = React.useState(companies)
@@ -38,12 +31,11 @@ export default function Experiences(){
     function highlightButton(id){
         setCompaniesState((prevState) => {
             return prevState.map((company) => {
-                const abc =  {
+                return  {
                     ...company,
                     clicked: id === company.id
                 }
-                // console.log(abc)
-                return abc
+
             })
         })
     }
