@@ -1,34 +1,79 @@
 import React from "react"
 import Button from "./button"
+import JobDescription from "./job-description"
 
 const companies = [
     {
         name: "Vertex Software",
         id: "vertex",
-        clicked: false
+        clicked: false,
+        jobDesc: <JobDescription
+            title={"Software Engineer Intern"}
+            company={"Vertex Software"}
+            date={"July 2022 - August 2022"}
+            description={[
+                "abc",
+                "dwa"
+            ]}
+        />
+
+
     },
     {
         name: "Goodyear",
         id: "goodyear",
-        clicked: false
+        clicked: false,
+        jobDesc: <JobDescription
+            title={"Software Engineer Intern"}
+            company={"Goodyear"}
+            date={"May 2022 - July 2022"}
+            description={[
+                "abc"
+            ]}
+        />
+
     },
     {
         name: "Line45",
         id: "line45",
-        clicked: false
+        clicked: false,
+        jobDesc: <JobDescription
+            title={"Software Test Engineer Intern"}
+            company={"Line45"}
+            date={"May 2021 - July 2021"}
+            description={[
+                "abc"
+            ]}
+        />
+
     },
     {
         name: "Anglophone Chile",
         id: "anglophone",
-        clicked: false
+        clicked: false,
+        jobDesc: <JobDescription
+            title={"Artificial Intelligence Research Assistant"}
+            company={"Anglophone Chile"}
+            date={"June 2020 - May 2021"}
+            description={[
+                "abc"
+            ]}
+        />
+
     }
 ]
 
-
-
 // 1. Create a component for the job description section
     // The components will be created based on the information in JS object "companies"
+        // The information it will take are as follows:
+            // Job title
+            // Company name
+            // Date
+            // Bullet points
+
 // 2. Conditionally render the job description component based on which object's clicked value is true
+    // Store the job-description component in the companies
+
 
 export default function Experiences(){
 
@@ -37,8 +82,6 @@ export default function Experiences(){
     function highlightButton(id){
         setCompaniesState((prevState) => {
             return prevState.map((company) => {
-
-
                 return  {
                     ...company,
                     clicked: id === company.id
@@ -62,6 +105,7 @@ export default function Experiences(){
             <div className={"section-heading"}>
                 <h1>02. My Experiences</h1><hr className={"section-heading-line"}/>
             </div>
+
             <div className={"experience-table"}>
                 <div className={"companies"}>
                     {companyButtons}
