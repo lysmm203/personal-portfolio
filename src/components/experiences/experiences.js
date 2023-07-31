@@ -24,6 +24,12 @@ const companies = [
     }
 ]
 
+
+
+// 1. Create a component for the job description section
+    // The components will be created based on the information in JS object "companies"
+// 2. Conditionally render the job description component based on which object's clicked value is true
+
 export default function Experiences(){
 
     const [companiesState, setCompaniesState] = React.useState(companies)
@@ -31,6 +37,8 @@ export default function Experiences(){
     function highlightButton(id){
         setCompaniesState((prevState) => {
             return prevState.map((company) => {
+
+
                 return  {
                     ...company,
                     clicked: id === company.id
