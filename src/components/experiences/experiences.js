@@ -107,6 +107,17 @@ export default function Experiences(){
         />
     ))
 
+    function displayDesc(companies){
+        let i = 0;
+        while (i < companies.length){
+            if (companies[i].clicked){
+                return companies[i].jobDesc
+            }
+            i++;
+        }
+        return companies[0].jobDesc
+    }
+
     return(
         <div className={"section"}>
             <div className={"section-heading"}>
@@ -117,7 +128,7 @@ export default function Experiences(){
                 <div className={"companies"}>
                     {companyButtons}
                 </div>
-                {companiesState.find(company => company.clicked).jobDesc}
+                {displayDesc(companiesState)}
             </div>
         </div>
     )
