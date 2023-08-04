@@ -12,8 +12,8 @@ const companies = [
             company={"Vertex Software"}
             date={"July 2022 - August 2022"}
             description={[
-                "abc",
-                "dwa"
+                "Built software that scrapes and preprocesses web data to identify listing statuses of products using Beautiful Soup",
+                "Implemented an email sender to notify users when new products are on sale using the email and smtplib package"
             ]}
         />
 
@@ -28,7 +28,11 @@ const companies = [
             company={"Goodyear"}
             date={"May 2022 - July 2022"}
             description={[
-                "abc"
+                "Implemented new functionalities to Goodyear’s in-house visualization software using PyVista. " +
+                "Added data selection and interaction, contour plots, saving and loading visualizations, and copy and " +
+                "paste functionality",
+                "Built a GUI using PyQt5, adding a menu bar, dock widget, and information window",
+                "Restructured the code to allow the software to run multiple sessions and improve readability"
             ]}
         />
 
@@ -42,7 +46,9 @@ const companies = [
             company={"Line45"}
             date={"May 2021 - July 2021"}
             description={[
-                "abc"
+                "Built an automated testing suite using Pytest for Bensis, a SaaS application, achieving a code " +
+                "coverage of 87%",
+                "Built a mock database using PostgreSQL to write the tests for GraphQL queries and mutations"
             ]}
         />
 
@@ -56,7 +62,10 @@ const companies = [
             company={"Anglophone Chile"}
             date={"June 2020 - May 2021"}
             description={[
-                "abc"
+                "Preprocessed and lemmatized the JSON data of English newspapers published in Chile during the 19th " +
+                "and early 20th centuries using the NLTK suite",
+                "Determined whether the word “Chili” was used to refer to the country Chile or the fruit using the " +
+                "spaCy NLP library"
             ]}
         />
 
@@ -72,8 +81,6 @@ const companies = [
             // Bullet points
 
 // 2. Conditionally render the job description component based on which object's clicked value is true
-    // Store the job-description component in the companies
-
 
 export default function Experiences(){
 
@@ -110,19 +117,7 @@ export default function Experiences(){
                 <div className={"companies"}>
                     {companyButtons}
                 </div>
-                <div className={"job"}>
-                    <h2>
-                        <span>Software Engineer Intern </span>
-                        <span className={"bold"}>@ Vertex Software</span>
-                    </h2>
-                    <p className={"job-date"}>July 2022 - August 2022</p>
-                    <ul className={"job-description"}>
-                        <li>Built a software that scrapes and preprocesses web data to identify listing statuses of
-                        products using BeautifulSoup</li>
-                        <li>Implemented an email sender to notify users when new products are on sale based on
-                            subscription status</li>
-                    </ul>
-                </div>
+                {companiesState.find(company => company.clicked).jobDesc}
             </div>
         </div>
     )
