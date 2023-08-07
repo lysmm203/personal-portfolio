@@ -5,6 +5,7 @@ import Intro from "./components/intro"
 import Body from "./components/body"
 import AboutMe from "./components/about_me"
 import Experiences from "./components/experiences/experiences"
+import Projects from "./components/projects/projects"
 import {LeftSidebar, RightSidebar} from "./components/sidebar"
 
 function App() {
@@ -17,10 +18,10 @@ function App() {
                   <Intro/>
                   <AboutMe/>
                   <Experiences/>
+                  <Projects/>
               </Body>
               <RightSidebar/>
           </div>
-
       </div>
   );
 }

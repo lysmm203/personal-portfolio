@@ -58,7 +58,7 @@ const companies = [
         id: "anglophone",
         clicked: false,
         jobDesc: <JobDescription
-            title={"AI Research Assistant"}
+            title={"Artificial Intelligence Research Assistant"}
             company={"Anglophone Chile"}
             date={"June 2020 - May 2021"}
             description={[
@@ -71,6 +71,16 @@ const companies = [
 
     }
 ]
+
+// 1. Create a component for the job description section
+    // The components will be created based on the information in JS object "companies"
+        // The information it will take are as follows:
+            // Job title
+            // Company name
+            // Date
+            // Bullet points
+
+// 2. Conditionally render the job description component based on which object's clicked value is true
 
 export default function Experiences(){
 
@@ -97,17 +107,6 @@ export default function Experiences(){
         />
     ))
 
-    function displayDesc(companies){
-        let i = 0;
-        while (i < companies.length){
-            if (companies[i].clicked){
-                return companies[i].jobDesc
-            }
-            i++;
-        }
-        return companies[0].jobDesc
-    }
-
     return(
         <div className={"section"}>
             <div className={"section-heading"}>
@@ -118,7 +117,19 @@ export default function Experiences(){
                 <div className={"companies"}>
                     {companyButtons}
                 </div>
-                {displayDesc(companiesState)}
+                <div className={"job"}>
+                    <h2>
+                        <span>Software Engineer Intern </span>
+                        <span className={"bold"}>@ Vertex Software</span>
+                    </h2>
+                    <p className={"job-date"}>July 2022 - August 2022</p>
+                    <ul className={"job-description"}>
+                        <li>Built a software that scrapes and preprocesses web data to identify listing statuses of
+                        products using BeautifulSoup</li>
+                        <li>Implemented an email sender to notify users when new products are on sale based on
+                            subscription status</li>
+                    </ul>
+                </div>
             </div>
         </div>
     )
