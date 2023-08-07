@@ -201,10 +201,15 @@ h2{
 }
 
 .project-box{
-  border: solid 1px;
-  border-radius: 25px;
+  margin: 2rem;
   padding: 2rem;
-  width: 30%;
-  height: 12rem;
+  transition: all 0.3s;
+}
 
+.project-box:hover{
+  border-radius: 25px;
+
+  -webkit-box-shadow:0 0 10px gray;
+  -moz-box-shadow: 0 0 10px gray;
+  box-shadow:0 0 10px gray;
 }
