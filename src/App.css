@@ -199,3 +199,12 @@ h2{
 .job-description li{
   font-size: 1.1rem;
 }
+
+.project-box{
+  border: solid 1px;
+  border-radius: 25px;
+  padding: 2rem;
+  width: 30%;
+  height: 12rem;
+
+}
