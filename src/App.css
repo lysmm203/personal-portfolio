@@ -201,9 +201,10 @@ h2{
 }
 
 .project-box{
-  margin: 2rem;
-  padding: 2rem;
   transition: all 0.3s;
+  margin: 2rem;
+  margin-left: 0;
+  padding: 1rem;
 }
 
 .project-box:hover{
@@ -212,4 +213,9 @@ h2{
   -webkit-box-shadow:0 0 10px gray;
   -moz-box-shadow: 0 0 10px gray;
   box-shadow:0 0 10px gray;
+}
+
+.tech-stack{
+  font-size: 1rem;
+  color: #625B5B;
 }
