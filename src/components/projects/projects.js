@@ -52,7 +52,7 @@ export default function Projects(){
 
 
     return (
-        <div className={"section"}>
+        <div className={"section"} id={"projects"}>
             <div className={"section-heading"}>
                 <h1>03. My Projects</h1><hr className={"section-heading-line"}/>
             </div>

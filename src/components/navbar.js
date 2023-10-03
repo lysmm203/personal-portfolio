@@ -1,13 +1,25 @@
-
+import ScrollButton from "./scroll_button"
 
 export default function Navbar(){
     return (
         <nav className={"navbar"}>
             <ul className={"navbar-buttons"}>
-                <li>01 About</li>
-                <li>02 Experience</li>
-                <li>03 Projects</li>
-                <li>04 Contact</li>
+                <li><ScrollButton
+                    sectionId={"about_me"}
+                    sectionName={"01 About"}
+                /></li>
+                <li><ScrollButton
+                    sectionId={"experiences"}
+                    sectionName={"02 Experience"}
+                /></li>
+                <li><ScrollButton
+                    sectionId={"projects"}
+                    sectionName={"03 Projects"}
+                /></li>
+                <li><ScrollButton
+                    sectionId={"contact_me"}
+                    sectionName={"04 Contact"}
+                /></li>
             </ul>
 
             <div>

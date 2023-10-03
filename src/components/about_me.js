@@ -1,6 +1,6 @@
 export default function AboutMe(){
     return (
-        <div className={"section"}>
+        <div className={"section"} id={"about_me"}>
             <div className={"section-heading"}>
                 <h1>01. About Me</h1><hr className={"section-heading-line"}/>
             </div>
