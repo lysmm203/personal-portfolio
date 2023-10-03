@@ -19,6 +19,6 @@ export default function ScrollButton(props){
     };
 
     return(
-        <section onClick={handleScrollClick}>{props.sectionName}</section>
+        <li onClick={handleScrollClick}>{props.sectionName}</li>
     )
 }
