@@ -7,6 +7,7 @@ import AboutMe from "./components/about_me"
 import Experiences from "./components/experiences/experiences"
 import Projects from "./components/projects/projects"
 import {LeftSidebar, RightSidebar} from "./components/sidebar"
+import ContactMe from "./components/contact_me"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
                   <AboutMe/>
                   <Experiences/>
                   <Projects/>
+                  <ContactMe/>
               </Body>
               <RightSidebar/>
           </div>
