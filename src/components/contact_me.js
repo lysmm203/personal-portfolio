@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContactMe(){
     return (
-        <div className={"section"} id={"about_me"}>
+        <div className={"section"} id={"contact_me"}>
             <div className={"section-heading"}>
                 <h1>04. Get in Touch!</h1><hr className={"section-heading-line"}/>
             </div>

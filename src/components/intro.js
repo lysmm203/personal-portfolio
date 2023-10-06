@@ -38,7 +38,6 @@ export default function Intro(){
             <h1>Yong Seok (Tommy) Lee,</h1>
             <div className={"animated-text"}>
                 <p id={"console-text"}></p>
-
             </div>
 
 
