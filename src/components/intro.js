@@ -2,23 +2,6 @@ import { useState, useEffect } from "react";
 
 export default function Intro(){
 
-    // 1. Select the first word in the array
-    // 2. Check if the letterCount is 0, greater than the length of the word, or neither
-    //     - If the letterCount is 0:
-    //             - extract the first word and set it as currentWord
-    //             - push currentWord to consoleText
-    //             - set the textToType to consoleText[0].substring(0, letterCount)
-    //             - increment letterCount by x (x = 1)
-    //
-    //     -If the letterCount is greater than the length of the word:
-    //             - set x to - 1
-    //             - set the textToType to consoleText[0].substring(0, letterCount)
-
-    //     -If it is neither:
-    //             - increment letterCount by x
-    //             - set the textToType to consoleText[0].substring(0, letterCount)
-
-    // const [console]
     let consoleText = ["Coder", "XAI Enthusiast", "Problem Solver"]
 
     useEffect(() => {
