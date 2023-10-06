@@ -24,7 +24,7 @@ export default function Navbar(){
             </ul>
 
             <div>
-                <a className={"button"} href={resume}>Resume</a>
+                <a className={"button"} href={resume} target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
         </nav>
     )

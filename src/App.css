@@ -1,3 +1,10 @@
+#console-text{
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
 html{
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -118,7 +125,6 @@ h2{
   background-color: #D7D1C4;
 }
 
-
 .flip{
   transform: rotate(90deg) translateX(-3rem);
   font-size: 1rem;
@@ -147,7 +153,7 @@ h2{
 }
 
 .section{
-  padding: 5rem 0;
+  margin: 7rem 0;
 }
 
 .section-heading{
